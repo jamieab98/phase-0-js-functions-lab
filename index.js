@@ -20,8 +20,14 @@ function findMaximum(num1, num2) {
 console.log("The larger of these two numbers: ", findMaximum(3, 2))
 
 function isPalindrome(word) {
-
+    let original = word;
+    let reversed = "";
+    for (let i = 0; i < original.length(); i++ ){
+        reversed = original.charAt(i) + reversed;
+    }
+    return original;
 }
+console.log("Reversed: ", isPalindrome("Apple"))
 
 function calculateDiscountedPrice(originalPrice, discountedPercentage) {
     let discountedPrice = originalPrice - (originalPrice * (discountedPercentage / 100));
